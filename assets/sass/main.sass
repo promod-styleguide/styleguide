@@ -1,0 +1,127 @@
+@import "vars"
+@import "reset"
+@import "fonts"
+@import "menu"
+@import "submenu"
+@import "design-elements/colors"
+@import "design-elements/typography"
+@import "design-elements/icons"
+@import "ui-components/tags"
+@import "ui-components/buttons"
+@import "ui-components/inputs"
+@import "styleguide"
+
+body
+  font-size: 16px
+  font-family: gotham, arial, sans-serif
+  color: $main-black
+
+.grid
+  display: grid
+  grid-template-columns: 220px 1fr 1fr 1fr
+  grid-template-rows: auto 1fr 1fr
+  grid-template-areas: "submenu menu menu menu" "submenu container container container" "submenu container container container"
+  min-height: 100vh
+
+.submenu
+  grid-area: submenu
+
+.menu
+  grid-area: menu
+
+.container
+  grid-area: container
+  background-color: #f7f7f7
+  background-image: url('/background.png')
+  border: 1px solid #eaeaea
+  padding: 2em
+  section
+  	margin: 0 0 4em 0
+	  .content
+	  	background-color: $white
+	  	padding: 2em	
+	  h4.title
+	  	font-size: 2em
+	  	line-height: 2rem
+	  	margin: 0 0 1rem 0
+
+.paragraphe
+	margin: 0 0 2em 0
+
+span.info
+	color: $purple
+	display: block
+	font-style: italic
+	font-size: 1em
+	line-height: 1.5em
+	margin: 0.5em 0
+	&.right
+		text-align: right
+
+.pantone
+	border: 2px solid $black
+	position: relative
+	width: 4em
+	&:before
+		content: ''
+		display: block
+		height: 4em
+		width: 4em
+	&.black:before
+		background-color: $main-black
+	&.pink:before
+		background-color: $pink
+	&.secondary-grey:before
+		background-color: $secondary-grey
+	&.light-grey:before
+		background-color: $light-grey
+	&.very-light-grey:before
+		background-color: $very-light-grey
+	&.white:before
+		background-color: $white
+	&.promo-red:before
+		background-color: $promo-red
+	&.success-green:before
+		background-color: $success-green
+	&.warning-yellow:before
+		background-color: $warning-yellow
+	span
+		padding: 0.5em
+		font-size: 0.6em
+		display: block
+		color: $black
+		font-weight: bold
+
+.class
+	border-radius: 0.250em
+	background-color: $very-light-grey
+	border: 1px solid $secondary-grey
+	color: $main-black
+	font-size: 0.8em
+	line-height: 1em
+	padding: 0.2em 0.5em
+	font-style: normal
+
+.code
+	margin: 1em 0
+	white-space: pre
+	display: block
+	padding: 1em
+	border: 1px solid $secondary-grey
+	background-color: $very-light-grey
+	border-radius: 0.250em
+	line-height: 1.4em
+	overflow-x: auto
+	font-family: monospace
+	.punctuation
+		color: #999
+	.element
+		color: #905
+	.attr-name
+		color: #690
+	.attr-value
+		color: #07a
+	.tab
+		margin: 0 0 0 2em
+	.tab2
+		margin: 0 0 0 4em

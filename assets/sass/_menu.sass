@@ -1,0 +1,28 @@
+.menu 
+  padding: 2em 
+  ul 
+    display: flex 
+    justify-content: flex-end 
+    li 
+      margin: 0 1em
+      &.active a:after 
+        opacity: 1 
+        bottom: -0.5em 
+      a 
+        position: relative 
+        display: block 
+        font-size: 0.8em 
+        &:hover:after
+            bottom: -0.5em 
+            opacity: 1 
+        &:after 
+          content: '' 
+          position: absolute 
+          left: 0 
+          right: 0 
+          opacity: 0 
+          bottom: -1em 
+          height: 1px 
+          background-color: $main-black 
+          display: block 
+          transition: all 0.3s

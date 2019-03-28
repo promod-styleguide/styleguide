@@ -1,0 +1,27 @@
+.inputs
+	ul
+		display: flex
+		flex-wrap: wrap	
+		justify-content: space-between
+		li
+			width: 48%
+			padding: 1em
+			margin: 0 0 2em 0
+			box-sizing: border-box
+			background-color: $white
+			.flex
+				display: flex
+				align-items: center
+				span.info
+					flex: 1
+					margin: 0 1em 0 0
+				.text-input-block
+					width: 50%
+					input[type=text], 
+					select, 
+					textarea
+						width: 100%
+
+@media screen and (max-width: 1200px)
+	.inputs ul li 
+		width: 100%

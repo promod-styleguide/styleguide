@@ -1,0 +1,32 @@
+.buttons
+	ul
+		display: flex
+		flex-wrap: wrap	
+		justify-content: space-between
+		li
+			width: 48%
+			padding: 1em
+			margin: 0 0 2em 0
+			box-sizing: border-box
+			background-color: $white
+			.flex
+				display: flex
+				align-items: center
+				span.info
+					flex: 1
+					margin: 0 1em 0 0
+			&.overlay-content
+				flex: 1 100%
+				background-image: url('/overlay.jpg')
+				background-size: cover
+				.flex
+					button
+						margin: 0 1em
+				.info
+					color: $white
+				.code
+					background-color: rgba($very-light-grey, 0.8)
+
+@media screen and (max-width: 1200px)
+	.buttons ul li 
+		width: 100%
