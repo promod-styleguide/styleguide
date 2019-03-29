@@ -5,7 +5,7 @@
       <nav class="submenu">
         <div class="logo">
           <nuxt-link to="/">
-            <img src="/logo.svg" alt="logo promod"></img>
+            <img src="logo.svg" alt="logo promod"></img>
             <h1>WEB DESIGN SYSTEM</h1>
           </nuxt-link>
         </div>
