@@ -13,7 +13,7 @@
           <h3>VENTE PRIVÉE</h3>
           <span class="info">h3 - Gotham Bold 48px, line-spacing 44px</span>
           <h4>VENTE PRIVÉE</h4>
-          <span class="info">h3 - Gotham Bold 32px, line-spacing 32px</span>
+          <span class="info">h4 - Gotham Bold 32px, line-spacing 32px</span>
           <h5>VENTE PRIVÉE</h5>
           <span class="info">h5 - Gotham Bold 24px, line-spacing 24px</span>
         </div>
@@ -38,7 +38,7 @@
           <h3>VENTE PRIVÉE</h3>
           <span class="info">h3 - Gotham Bold 16px, line-spacing 17px</span>
           <h4>VENTE PRIVÉE</h4>
-          <span class="info">h3 - Gotham Bold 14px, line-spacing 16px</span>
+          <span class="info">h4 - Gotham Bold 14px, line-spacing 16px</span>
           <h5>VENTE PRIVÉE</h5>
           <span class="info">h5 - Gotham Bold 12px, line-spacing 14px</span>
         </div>
@@ -75,7 +75,7 @@
               Sélectionnée avec soin et respectant l'environnement, la laine italienne MANTECO est une matière textile précieuse, possédant des qualités exceptionnelles de douceur et de chaleur.
             </p>
           </div>
-          <span class="info"><span class="class">.text</span> - Gotham Book 18px, line-spacing 26px</span>
+          <span class="info"><span class="class">.text-big</span> - Gotham Book 18px, line-spacing 26px</span>
           <div class="pantone black">
             <span>#141414</span>
           </div>

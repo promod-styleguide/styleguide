@@ -1,4 +1,15 @@
 .colors
+	.type
+		display: flex
+		.class
+			margin: 0 2em 2em 0
+			cursor: pointer
+			padding: 0.5em 0.8em
+			transition: all .3s
+			&.active
+			    background-color: $main-black
+			    color: $white
+			    border-color: $main-black
 	ul
 		display: flex
 		flex-wrap: wrap
@@ -11,7 +22,9 @@
 					height: 8em
 					width: 8em
 				span
-					font-size: 0.9em
+					font-size: 0.8em
+					padding: 0.5rem 0.2rem
+					transition: all .3s
 		&.double
 			li
 				.pantone
@@ -38,12 +51,10 @@
 						&:before
 							content: ''
 							display: block
-							height: 5em
-							width: 5em
-						span
-							font-size: 0.8em
+							height: 8em
+							width: 8em
 					.color1
-						border-right: 1px solid $black
+						border-right: 0.063em solid $black
 					.color2
-						border-left: 1px solid $black
+						border-left: 0.063em solid $black
 

@@ -9,29 +9,11 @@
             <h1>WEB DESIGN SYSTEM</h1>
           </nuxt-link>
         </div>
-        <h5>COMPONENTS</h5>
+        <h5>CLASSES</h5>
         <ul>
           <li>
-            <nuxt-link to="/ui-components/buttons">
-              Buttons
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/ui-components/alerts">
-              Alerts
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/ui-components/tags">
-              Tags
-            </nuxt-link>
-          </li>
-        </ul>
-        <h5>FORM ELEMENTS</h5>
-        <ul>
-          <li>
-            <nuxt-link to="/ui-components/inputs">
-              Inputs
+            <nuxt-link to="/css-utilities/general">
+              General
             </nuxt-link>
           </li>
         </ul>

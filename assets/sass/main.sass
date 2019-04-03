@@ -13,12 +13,13 @@
 
 body
   font-size: 16px
+  line-height: 1.375em
   font-family: gotham, arial, sans-serif
   color: $main-black
 
 .grid
   display: grid
-  grid-template-columns: 220px 1fr 1fr 1fr
+  grid-template-columns: 13.750em 1fr 1fr 1fr
   grid-template-rows: auto 1fr 1fr
   grid-template-areas: "submenu menu menu menu" "submenu container container container" "submenu container container container"
   min-height: 100vh
@@ -33,7 +34,7 @@ body
   grid-area: container
   background-color: #f7f7f7
   background-image: url('~static/img/background.png')
-  border: 1px solid #eaeaea
+  border: 0.063em solid #eaeaea
   padding: 2em
   section
   	margin: 0 0 4em 0
@@ -59,7 +60,7 @@ span.info
 		text-align: right
 
 .pantone
-	border: 2px solid $black
+	border: 0.125em solid $black
 	position: relative
 	width: 4em
 	&:before
@@ -86,8 +87,9 @@ span.info
 	&.warning-yellow:before
 		background-color: $warning-yellow
 	span
-		padding: 0.5em
+		padding: 0.2rem
 		font-size: 0.6em
+		line-height: 1rem
 		display: block
 		color: $black
 		font-weight: bold
@@ -95,7 +97,7 @@ span.info
 .class
 	border-radius: 0.250em
 	background-color: $very-light-grey
-	border: 1px solid $secondary-grey
+	border: 0.063em solid $secondary-grey
 	color: $main-black
 	font-size: 0.8em
 	line-height: 1em
@@ -107,7 +109,7 @@ span.info
 	white-space: pre
 	display: block
 	padding: 1em
-	border: 1px solid $secondary-grey
+	border: 0.063em solid $secondary-grey
 	background-color: $very-light-grey
 	border-radius: 0.250em
 	line-height: 1.4em

@@ -1,32 +1,53 @@
 h1
     font-weight: bold
     font-size: 1.875em
-    line-height: 1.750rem
+    line-height: 0.933em
     color: $main-black
 
 h2
     font-weight: bold
     font-size: 1.125em
-    line-height: 1.125rem
+    line-height: 1em
     color: $main-black
 
 h3
     font-weight: bold
     font-size: 1em
-    line-height: 1.063rem
+    line-height: 1.063em
     color: $main-black
 
 h4
     font-weight: bold
     font-size: 0.875em
-    line-height: 1rem
+    line-height: 1.167em
     color: $main-black
 
 h5
     font-weight: bold
     font-size: 0.750em
-    line-height: 0.875rem
+    line-height: 1.167em
     color: $main-black
+
+.clearfix
+    clear: both
+
+.is-hidden
+    display: none
+
+.bold
+    font-weight: bold
+
+.italic
+    font-style: italic
+
+.text-left
+    text-align: left
+
+.text-right
+    text-align: right
+
+.text-center
+    text-align: center
 
 .icon-svg
   display: inline-block
@@ -38,44 +59,46 @@ h5
 
 .text
     font-size: 1.125em
-    line-height: 1.625rem
+    line-height: 1.444em
     color: $main-black
 
 .text-small
     font-size: 0.875em
-    line-height: 1.125rem
+    line-height: 1.286em
     color: $main-black
 
 .text-disclaimer
     font-size: 0.750em
-    line-height: 1rem
+    line-height: 1.333em
     color: $secondary-grey
 
-.message
+.alert
     display: flex
     align-items: center
     padding: 1.125em
+    background-color: $main-black
+    color: $white
     .title
         flex: 1
-        padding: 0 1.125rem 0 0
+        padding: 0 1.2em 0 0
         font-weight: bold
         font-size: 0.875em
-        line-height: 1rem
+        line-height: 1.2em
         span
             font-weight: normal
-    &.info.link
-        background-color: $main-black
-        color: $white
-        a
-            color: $white
-            border-color: $white
-    &.info.button
+    &.info
         background-color: #e9f7f8
         color: #29889b
-        a
+        &.link
+            a
+                color: #29889b
+                border-color: #29889b
+        &.button
+            a
+                color: #29889b
+                border-color: #29889b
+        .close
             color: #29889b
-            border-color: #29889b
-            padding: 0.4em 0.8em
     &.success
         background-color: $success-light-green
         color: $success-green
@@ -101,23 +124,41 @@ h5
             a
                 color: $warning-yellow
                 border-color: $warning-yellow
-                padding: 0.8em 1.6em
         .close
             color: $warning-yellow
+    &.error
+        background-color: $promo-light-red
+        color: $promo-red
+        &.link
+            a
+                color: $promo-red
+                border-color: $promo-red
+        &.button
+            a
+                color: $promo-red
+                border-color: $promo-red
+        .close
+            color: $promo-red
     &.link
         a
             font-size: 0.8em
-            padding: 0 0 0.2em 0
-            border-bottom-width: 2px
+            border-bottom-width: 0.125em
             border-style: solid
             opacity: 0.6
+            color: $white
+            border-color: $white
     &.button
         a
-            border-width: 2px
+            border-width: 0.125em
             border-style: solid
             font-weight: bold
             text-transform: uppercase
             font-size: 0.875em
+            padding: 0.6em 1.4em
+            color: $white
+            border-color: $white
+    .close
+        color: $white
 
 .tag
     font-weight: bold
@@ -182,9 +223,9 @@ a.button
     &.big
         font-size: 0.8em
         line-height: 1.6em
-        padding: 0.9em 2.5em
+        padding: 0.8em 3.5em
         text-transform: uppercase
-        border-width: 2px
+        border-width: 0.125em
         &.icon
             .icon-content
                 .icon-svg
@@ -195,8 +236,7 @@ a.button
         font-size: 0.8em
         line-height: 1.6em
         padding: 0.5em 2.5em
-        text-transform: lowercase
-        border-width: 1px
+        border-width: 0.063em
         &.icon
             .icon-content
                 .icon-svg
@@ -226,7 +266,7 @@ a.button
         color: $main-black
         text-transform: uppercase
         font-size: 0.8em
-        line-height: 1em
+        line-height: 1.25em
         padding: 0
         .icon-content
             .icon-svg
@@ -235,14 +275,16 @@ a.button
                 width: 1.5em
         span
             position: relative
+            display: block
+            padding: 0 0 0.125em 0
             &:after
                 content: ''
                 display: block
                 position: absolute
-                bottom: -0.2em
+                bottom: 0
                 left: 0
                 right: 0
-                height: 2px
+                height: 0.125em
                 background-color: $main-black
                 transition: all .3s
         &.small
@@ -253,8 +295,10 @@ a.button
                     margin: 0 0.6em 0 0
                     height: 1.2em
                     width: 1.2em
-            span:after
-                height: 1px
+            span
+                padding: 0 0 0.063em 0
+                &:after
+                    height: 0.063em
         &:hover
             span:after
                 left: 100%
@@ -273,6 +317,9 @@ a.button
             color: $white
             background-color: transparent
             border-color: $white
+            &:hover
+                background-color: $white
+                color: $main-black
         &.loading
             &.primary
                 .icon-svg
@@ -289,18 +336,18 @@ a.button
     label
         color: $secondary-grey
         font-size: 0.750em
-        line-height: 1rem
-        margin: 0 0 0.4rem 0
+        line-height: 1.2em
+        margin: 0 0 0.2em 0
         display: block
     input[type=text],
     select,
     textarea
-        border: 1px solid $secondary-grey
+        border: 0.083em solid $secondary-grey
         color: $secondary-grey
         font-size: 0.750em
-        line-height: 0.875rem
+        line-height: 1.167em
         box-sizing: border-box
-        padding: 0.938rem
+        padding: 1.250em
         transition: all .3s
         outline: none
         font-weight: normal
@@ -325,7 +372,7 @@ a.button
     .input-icon
         position: relative
         input[type=text]
-            padding-right: 3.750rem
+            padding-right: 5em
         .icon-svg
             position: absolute
             top: 0
@@ -339,16 +386,16 @@ a.button
     .input-button
         position: relative
         input[type=text]
-            padding-right: 3.750rem
+            padding-right: 5em
         button
             border: 0
             color: $white
             background-color: $main-black
-            height: 2.875rem
-            width: 3.875rem
+            height: 3.286em
+            width: 4.429em
             font-weight: bold
             font-size: 0.875em
-            line-height: 2.875rem
+            line-height: 3.286em
             padding: 0
             text-align: center
             position: absolute
@@ -362,11 +409,10 @@ a.button
     .message
         color: $secondary-grey
         font-size: 0.750em
-        line-height: 1rem
-        margin: 0.4rem 0 0 0
+        line-height: 1.333em
+        margin: 0.500em 0 0 0
         display: flex
         align-items: center
-        padding: 0
         &.error
             color: $promo-red
         &.success

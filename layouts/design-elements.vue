@@ -46,20 +46,7 @@
           </li>
         </ul>
       </nav>
-      <nav class="menu">
-        <ul>
-          <li class="active">
-            <nuxt-link to="/design-elements/colors">
-              Design Elements
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/ui-components/buttons">
-              UI Components
-            </nuxt-link>
-          </li>
-        </ul>
-      </nav>
+      <Menu />
       <div class="container">
         <nuxt />
       </div>
@@ -69,9 +56,11 @@
 
 <script>
 import sprite from '~/components/sprite.vue'
+import Menu from '~/components/menu.vue'
 export default {
   components: {
-    sprite
+    sprite,
+    Menu
   }
 }
 </script>
