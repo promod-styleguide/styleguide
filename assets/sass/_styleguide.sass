@@ -353,6 +353,8 @@ a.button
         font-weight: normal
         font-family: gotham, arial, sans-serif
         &.error
+            &::placeholder
+                color: $promo-red
             border-color: $promo-red
             color: $promo-red
             &+.icon-svg
@@ -360,6 +362,8 @@ a.button
             &+button
                 background-color: $promo-red
         &.success
+            &::placeholder
+                color: $success-green
             border-color: $success-green
             color: $success-green
             &+.icon-svg
@@ -417,6 +421,73 @@ a.button
             color: $promo-red
         &.success
             color: $success-green
+
+.control
+    position: relative
+    display: flex
+    align-items: center
+    cursor: pointer
+    margin: 0.6em 0
+    input
+        position: absolute
+        z-index: -1
+        opacity: 0
+        margin: 0
+        &:checked 
+            &~ .control-indicator
+                &:after
+                    background-color: $main-black 
+                &~ span
+                    color: $main-black
+        &:disabled 
+            &~ .control-indicator
+                pointer-events: none
+                background-color: $very-light-grey
+                border-color: $light-grey
+                &:after
+                    background-color: $very-light-grey
+                &~ span
+                    color: $secondary-grey
+        &:checked:disabled ~ .control-indicator:after
+            background-color: $secondary-grey
+    .control-indicator
+        position: relative
+        margin: 0 0.625em 0 0
+        width: 1.125em
+        height: 1.125em
+        background: $white
+        border: 0.125em solid $light-grey
+        transition: all 0.3s
+        &:after
+            position: absolute
+            content: ''
+            width: 0.625em
+            top: 0.250em
+            left: 0.250em
+            height: 0.625em
+            background-color: $white
+            transition: all 0.3s
+    span
+        font-size: 0.813em
+        line-height: 1.538em
+        color: $secondary-grey
+        transition: all 0.3s
+    &.control-radio
+        input
+            &:checked 
+                &~ .control-indicator
+                    border-color: $main-black 
+            &:disabled 
+                &~ .control-indicator
+                    border-color: $light-grey
+        .control-indicator
+            border-radius: 100%
+            width: 0.875em
+            height: 0.875em
+            &:after
+                border-radius: 100%
+                top: 0.125em
+                left: 0.125em
 
 @keyframes spin
     from

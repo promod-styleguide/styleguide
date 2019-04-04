@@ -5,9 +5,9 @@
         COLORS
       </h4>
       <div class="type">
-        <span class="class" @click="changeType('hex')">Hex</span>
-        <span class="class" @click="changeType('rgb')">RGB</span>
-        <span class="class" @click="changeType('hsl')">HSL</span>
+        <span class="class" :class="{active: colorsType === 'hex'}" @click="changeType('hex')">Hex</span>
+        <span class="class" :class="{active: colorsType === 'rgb'}" @click="changeType('rgb')">RGB</span>
+        <span class="class" :class="{active: colorsType === 'hsl'}" @click="changeType('hsl')">HSL</span>
       </div>
       <ul class="simple">
         <li>
