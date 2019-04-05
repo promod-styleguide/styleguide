@@ -434,19 +434,19 @@ a.button
         opacity: 0
         margin: 0
         &:checked 
-            &~ .control-indicator
+            & + .control-indicator
                 &:after
                     background-color: $main-black 
                 &~ span
                     color: $main-black
         &:disabled 
-            &~ .control-indicator
+            & + .control-indicator
                 pointer-events: none
                 background-color: $very-light-grey
                 border-color: $light-grey
                 &:after
                     background-color: $very-light-grey
-                &~ span
+                & + span
                     color: $secondary-grey
         &:checked:disabled ~ .control-indicator:after
             background-color: $secondary-grey
@@ -475,10 +475,10 @@ a.button
     &.control-radio
         input
             &:checked 
-                &~ .control-indicator
+                & + .control-indicator
                     border-color: $main-black 
             &:disabled 
-                &~ .control-indicator
+                & + .control-indicator
                     border-color: $light-grey
         .control-indicator
             border-radius: 100%
@@ -488,6 +488,64 @@ a.button
                 border-radius: 100%
                 top: 0.125em
                 left: 0.125em
+
+.toggle
+    position: relative
+    display: flex
+    align-items: center
+    margin: 0.6em 0
+    input[type=checkbox]
+        height: 0
+        width: 0
+        margin: 0
+        visibility: hidden
+        &:checked + label
+            background-color: $main-black
+            border-color: $main-black
+            &:after
+                left: 100%
+                transform: translateX(-100%)
+                box-shadow: none
+            & + span
+                color: $main-black
+        &:disabled + label
+            background-color: $very-light-grey
+            border-color: $light-grey
+            &:after
+                background-color: $very-light-grey
+                box-shadow: 0.125em 0 0.125em 0 rgba($secondary-grey, 0.1)
+        &:disabled:checked + label
+            background-color: $light-grey
+            border-color: $light-grey
+            & + span
+                color: $secondary-grey
+    label
+        cursor: pointer
+        width: 2.938em
+        height: 1.563em
+        border: 0.063em solid $light-grey
+        background-color: $white
+        border-radius: 1.563em
+        position: relative
+        transition: all .3s
+        margin: 0 0.625em 0 0
+        &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 1.438em
+            height: 1.438em
+            background: $white
+            border-radius: 100%
+            box-shadow: 0.125em 0 0.125em 0 $secondary-grey
+            border: 0.063em solid $very-light-grey
+            transition: all 0.3s
+    span
+        font-size: 0.813em
+        line-height: 1.538em
+        color: $secondary-grey
+        transition: all 0.3s
 
 @keyframes spin
     from
