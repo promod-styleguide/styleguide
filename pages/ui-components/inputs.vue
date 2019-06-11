@@ -119,22 +119,22 @@
             <div class="checkbox">
               <label class="control control-checkbox">
                 <input type="checkbox" name="checkbox">
-                <div class="control-indicator"></div>
+                <div class="control-indicator" />
                 <span>Active</span>
               </label>
               <label class="control control-checkbox">
                 <input type="checkbox" name="checkbox" checked="checked">
-                <div class="control-indicator"></div>
+                <div class="control-indicator" />
                 <span>Selected</span>
               </label>
               <label class="control control-checkbox">
                 <input type="checkbox" name="checkbox" disabled>
-                <div class="control-indicator"></div>
+                <div class="control-indicator" />
                 <span>Inactive</span>
               </label>
               <label class="control control-checkbox">
                 <input type="checkbox" name="checkbox" checked="checked" disabled>
-                <div class="control-indicator"></div>
+                <div class="control-indicator" />
                 <span>Inactive selected</span>
               </label>
             </div>
@@ -149,22 +149,22 @@
             <div class="radio">
               <label class="control control-radio">
                 <input type="radio" name="radio">
-                <div class="control-indicator"></div>
+                <div class="control-indicator" />
                 <span>Active</span>
               </label>
               <label class="control control-radio">
                 <input type="radio" name="radio" checked="checked">
-                <div class="control-indicator"></div>
+                <div class="control-indicator" />
                 <span>Selected</span>
               </label>
               <label class="control control-radio">
                 <input type="radio" name="radio" disabled>
-                <div class="control-indicator"></div>
+                <div class="control-indicator" />
                 <span>Inactive</span>
               </label>
               <label class="control control-radio">
                 <input type="radio" name="radio2" checked="checked" disabled>
-                <div class="control-indicator"></div>
+                <div class="control-indicator" />
                 <span>Inactive selected</span>
               </label>
             </div>
@@ -178,23 +178,23 @@
             <span class="info">Toggle buttons</span>
             <div class="toggle-container">
               <div class="toggle">
-                <input type="checkbox" class="toggle" id="toggle1">
-                <label for="toggle1"></label>
+                <input id="toggle1" type="checkbox" class="toggle">
+                <label for="toggle1" />
                 <span>Active</span>
               </div> 
               <div class="toggle">
-                <input type="checkbox" class="toggle" id="toggle2" checked="checked">
-                <label for="toggle2"></label>
+                <input id="toggle2" type="checkbox" class="toggle" checked="checked">
+                <label for="toggle2" />
                 <span>Selected</span>
               </div>
               <div class="toggle">
-                <input type="checkbox" class="toggle" id="toggle3" disabled>
-                <label for="toggle3"></label>
+                <input id="toggle3" type="checkbox" class="toggle" disabled>
+                <label for="toggle3" />
                 <span>Inactive</span>
               </div>
               <div class="toggle">
-                <input type="checkbox" class="toggle" id="toggle4" checked="checked" disabled>
-                <label for="toggle4"></label>
+                <input id="toggle4" type="checkbox" class="toggle" checked="checked" disabled>
+                <label for="toggle4" />
                 <span>Inactive selected</span>
               </div>
             </div>
