@@ -1,7 +1,7 @@
 <template>
   <div>
     <sprite />
-    <div class="grid test">
+    <div class="grid">
       <nav class="submenu">
         <div class="logo">
           <nuxt-link to="/">
