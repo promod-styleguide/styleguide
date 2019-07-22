@@ -10,11 +10,11 @@
         </div>
         <div class="download">
           <svg class="icon-svg"><use xlink:href="#icon-arrow" /></svg>
-          <a download="sprite.svg" href="../img/icons/sprite.svg">Download sprite.svg</a>
+          <a download="sprite.svg" href="/styleguide/img/icons/sprite.svg">Download sprite.svg</a>
         </div>
         <div class="download">
           <svg class="icon-svg"><use xlink:href="#icon-arrow" /></svg>
-          <a download="icons.zip" href="../img/icons/sources/icons.zip">Download icons.zip</a>
+          <a download="icons.zip" href="/styleguide/img/icons/sources/icons.zip">Download icons.zip</a>
         </div>
         <ul>
           <li>
