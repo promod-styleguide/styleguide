@@ -44,6 +44,11 @@
               Interface
             </nuxt-link>
           </li>
+          <li>
+            <nuxt-link to="/design-elements/other-icons">
+              Other
+            </nuxt-link>
+          </li>
         </ul>
       </nav>
       <Menu />

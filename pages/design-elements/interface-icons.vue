@@ -18,6 +18,18 @@
         </div>
         <ul>
           <li>
+            <svg class="icon-svg"><use xlink:href="#icon-delete" /></svg>
+            <span class="class">#icon-delete</span>
+          </li>
+          <li>
+            <svg class="icon-svg"><use xlink:href="#icon-info" /></svg>
+            <span class="class">#icon-info</span>
+          </li>
+          <li>
+            <svg class="icon-svg"><use xlink:href="#icon-warning" /></svg>
+            <span class="class">#icon-warning</span>
+          </li>
+          <li>
             <svg class="icon-svg"><use xlink:href="#icon-arrow" /></svg>
             <span class="class">#icon-arrow</span>
           </li>

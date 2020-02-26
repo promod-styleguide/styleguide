@@ -22,6 +22,10 @@
             <span class="class">#icon-facebook</span>
           </li>
           <li>
+            <svg class="icon-svg"><use xlink:href="#icon-google-plus" /></svg>
+            <span class="class">#icon-google-plus</span>
+          </li>
+          <li>
             <svg class="icon-svg"><use xlink:href="#icon-instagram" /></svg>
             <span class="class">#icon-instagram</span>
           </li>
