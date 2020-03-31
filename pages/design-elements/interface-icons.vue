@@ -54,6 +54,10 @@
             <span class="class">#icon-geo</span>
           </li>
           <li>
+            <svg class="icon-svg"><use xlink:href="#icon-geoloc" /></svg>
+            <span class="class">#icon-geoloc</span>
+          </li>
+          <li>
             <svg class="icon-svg"><use xlink:href="#icon-cintre" /></svg>
             <span class="class">#icon-cintre</span>
           </li>
